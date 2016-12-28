@@ -3,6 +3,7 @@
 import           Control.Monad
 import qualified Data.Aeson.Types      as AT
 import qualified Data.HashMap.Strict   as M
+import           Data.List             (isSuffixOf)
 import           Data.Maybe            (fromMaybe)
 import           Data.Monoid           (mappend)
 import           Data.Text             (Text, pack, unpack)
@@ -32,7 +33,7 @@ main = hakyll $ do
 
     tagsRules tags $ \tag pattern -> do
         let title = "Posts tagged \"" ++ tag ++ "\""
-        route idRoute
+        route cleanRoute
         compile $ do
             posts <- recentFirst =<< loadAll pattern
             let ctx = constField "title" title
@@ -45,14 +46,14 @@ main = hakyll $ do
                 >>= relativizeUrls
 
     match "posts/*" $ do
-        route $ metadataRoute (\m -> constRoute . valueToString . fromMaybe (error "Error!") $ M.lookup (pack "permalink") m)
+        route (postRoute `composeRoutes` cleanRoute)
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/post.html"    (postCtxWithTags tags)
             >>= loadAndApplyTemplate "templates/default.html" (postCtxWithTags tags)
             >>= relativizeUrls
 
     create ["archive.html"] $ do
-        route (constRoute "archive")
+        route cleanRoute
         compile $ do
             posts <- recentFirst =<< loadAll "posts/*"
             let archiveCtx =
@@ -67,7 +68,7 @@ main = hakyll $ do
 
 
     match "index.html" $ do
-        route (constRoute "home")
+        route idRoute
         compile $ do
             posts <- recentFirst =<< loadAll "posts/*"
             let indexCtx =
@@ -78,6 +79,7 @@ main = hakyll $ do
                 >>= applyAsTemplate indexCtx
                 >>= loadAndApplyTemplate "templates/default.html" indexCtx
                 >>= relativizeUrls
+            >>= cleanIndexUrls
 
     match "templates/*" $ compile templateCompiler
     match "includes/*" $ compile templateCompiler
@@ -111,3 +113,24 @@ postRx :: Regex
 postRx = mkRegex "^([0-9]{4})\\-([0-9]{2})\\-([0-9]{2})\\-(.+)$"
 
 valueToString (AT.String s) = unpack s
+
+cleanRoute :: Routes
+cleanRoute = customRoute createIndexRoute
+  where
+    createIndexRoute ident = takeDirectory p </> takeBaseName p </> "index.html"
+                            where p = toFilePath ident
+
+cleanIndexUrls :: Item String -> Compiler (Item String)
+cleanIndexUrls = return . fmap (withUrls cleanIndex)
+
+cleanIndexHtmls :: Item String -> Compiler (Item String)
+cleanIndexHtmls = return . fmap (replaceAll pattern replacement)
+    where
+      pattern = "/index.html"
+      replacement = const "/"
+
+cleanIndex :: String -> String
+cleanIndex url
+    | idx `isSuffixOf` url = take (length url - length idx) url
+    | otherwise            = url
+  where idx = "index.html"
