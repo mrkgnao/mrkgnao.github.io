@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset=utf-8>
+    <meta content="IE=edge" http-equiv=X-UA-Compatible>
+    <meta content="width=device-width,initial-scale=1" name=viewport>
+    <meta content="Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development." name=description>
+    <meta content="Mark Otto, Jacob Thornton, and Bootstrap contributors" name=author>
+    <title>$title$</title>
+    <link href=http://getbootstrap.com/dist/css/bootstrap.min.css rel=stylesheet>
+    <link href=/css/docs.css rel=stylesheet>
+    <!--[if lt IE 9]><script src=http://getbootstrap.com/assets/js/ie8-responsive-file-warning.js></script><![endif]-->
+    <script src=http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js></script>
+    <!--[if lt IE 9]> <script src=https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js></script> <script src=https://oss.maxcdn.com/respond/1.4.2/respond.min.js></script> <![endif]-->
+    <link href=/apple-touch-icon.png rel=apple-touch-icon>
+    <link href=/favicon.ico rel=icon>
+    <script>
+        ! function(e, t, a, n, c, o, s) {
+            e.GoogleAnalyticsObject = c, e[c] = e[c] || function() {
+                (e[c].q = e[c].q || []).push(arguments)
+            }, e[c].l = 1 * new Date, o = t.createElement(a), s = t.getElementsByTagName(a)[0], o.async = 1, o.src = n, s.parentNode.insertBefore(o, s)
+        }(window, document, "script", "//www.google-analytics.com/analytics.js", "ga"), ga("create", "UA-146052-10", "getbootstrap.com"), ga("send", "pageview")
+    </script>
+
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "AMS" } }, tex2jax: { inlineMath: [ ['\\\(','\\\)'] ], displayMath: [ ['\\\[','\\\]'] ], processEscapes: true, } });
+    </script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG">
+    </script>
+
+</head>
+
+<body>
+    <a href=#content class="sr-only sr-only-focusable" id=skippy>
+        <div class=container><span class=skiplink-text>Skip to main content</span></div>
+    </a>
+
+    <!-- <a href=https://v4-alpha.getbootstrap.com/ class=v4-tease>Aww yeah, Bootstrap 4 is coming!</a> -->
+    <header class="bs-docs-nav navbar navbar-static-top" id=top>
+        <div class=container>
+            <div class=navbar-header> <button aria-controls=bs-navbar aria-expanded=false class="collapsed navbar-toggle" data-target=#bs-navbar data-toggle=collapse type=button> <span class=sr-only>Toggle navigation</span> <span class=icon-bar></span> <span class=icon-bar></span> <span class=icon-bar></span> </button> <a href=http://getbootstrap.com/ class=navbar-brand>The Good, The Bad, and The Ramified</a> </div>
+            <nav class="collapse navbar-collapse" id=bs-navbar>
+                <!-- <ul class="nav navbar-nav"> -->
+                <!-- <li class=active> <a href=http://getbootstrap.com/getting-started/>Getting started</a> -->
+                <!-- </li> -->
+                <!-- <li> <a href=http://getbootstrap.com/css/>CSS</a> -->
+                <!-- </li> -->
+                <!-- <li> <a href=http://getbootstrap.com/components/>Components</a> -->
+                <!-- </li> -->
+                <!-- <li> <a href=http://getbootstrap.com/javascript/>JavaScript</a> -->
+                <!-- </li> -->
+                <!-- <li> <a href=http://getbootstrap.com/customize/>Customize</a> -->
+                <!-- </li> -->
+                <!-- </ul> -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li class=active><a href="/about.html" onclick='ga("send","event","Navbar","Community links","Themes")'>About</a></li>
+                    <li><a href="/archive.html" onclick='ga("send","event","Navbar","Community links","Expo")'>Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="bs-docs-header col-md-12" id=content tabindex=-1>
+        <div class=container>
+            <h1>Hey there!</h1>
+            <p>
+                I'm Soham, a mathematician, functional programmer, and explorer of the unfamiliar. I'm Soham, a mathematician, functional programmer, and explorer of the unfamiliar.
+                <span class="hidden">
+                        <!-- LaTeX definitions I use -->
+                        \[ \newcommand{\C}{\mathbb C} \newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Zn}[1]{\mathbb Z_{#1} } \newcommand{\Q}{\mathbb Q} \newcommand{\PP}{\mathbb{P} } \newcommand{\R}{\mathbb R} \newcommand{\F}{\mathbb F} \newcommand{\Zgt}{ { {\mathbb{Z} } }^{\geq 0} } \newcommand{\Zi}{ {\Z}[i]} \newcommand{\chn}[1]{C_\bullet(#1)} \newcommand{\bkt}[1]{\langle #1 \rangle} \newcommand{\bull}[1]{A_\bullet} \newcommand{\Mod}[1]{\ (\text{mod}\ #1)} \newcommand{\gal}[2]{\text{Gal}(#1/#2)} \newcommand{\galqp}{\gal {\overline{\Q_p} } {\Q_p} } \newcommand{\galfp}{\gal {\overline{\F p} } {\F p} } \newcommand{\fix}[1]{\text{Fix}(#1)} \newcommand{\kp}{K_\pp} \newcommand{\iv}[1]{#1^{-1} } \newcommand{\oo}[1]{\mathcal O_{#1} } \newcommand{\pp}{\mathfrak p} \newcommand{\mm}{\mathfrak m} \newcommand{\ok}{\mathcal O_K} \newcommand{\ol}{\mathcal O_L} \newcommand{\tr}[2][L/K]{\text{Tr}_{#1}(#2)} \newcommand{\nm}[2][L/K]{\text{Nm}_{#1}(#2)} \newcommand{\Nm}[1]{\text{Nm}(#1)} \newcommand{\Tr}{\text{Tr} } \newcommand{\Id}[1]{\text{Id}(#1)} \newcommand{\Cl}[1]{\text{Cl}(#1)} \newcommand{\Prin}[1]{\text{Prin}(#1)} \newcommand{\idok}{\Id \ok} \newcommand{\clok}{\Cl \ok} \newcommand{\prinok}{\Prin \ok} \newcommand{\clk}{\Cl K} \newcommand{\ab}[1]{#1^{\text{ab} } } \newcommand{\ut}[1]{#1^\times} \newcommand{\ur}[1]{#1^{\text{ur} } } \newcommand{\FF}{ {\mathcal{F} } } \newcommand{\GG}{ {\mathcal{G} } } \newcommand{\CC}{ {\sf{C} } } \newcommand{\DD}{ {\sf{D} } } \newcommand{\opp}[1]{ {#1}^{\text{op} } } \newcommand{\wcc}{w\CC} \newcommand{\fcc}{f\CC} \newcommand{\cocc}{co\CC} \newcommand{\ob}{ {\sf{ob} } } \newcommand{\Top}{ {\sf{Top} } } \newcommand{\Set}{ {\sf{Set} } } \newcommand{\Ring}{ {\sf{Ring} } } \newcommand{\Grp}{ {\sf{Grp} } } \newcommand{\hTop}{ {\sf{hTop} } } \newcommand{\Ix}{ {\sf{I} } } \newcommand{\Topi}{ {\Top^\Ix} } \newcommand{\homf}[3][]{ {\sf{Hom} }_{#1}(#2,#3)} \newcommand{\hhom}[1]{ {\sf{Hom} }(#1,-)} \newcommand{\homm}[1]{ {\sf{Hom} }(-,#1)} \newcommand{\isom}{\overset\sim \longrightarrow} \newcommand\dif{\mathop{}\!\mathrm{d} } \DeclareMathOperator{\im}{im} \DeclareMathOperator{\id}{id} \DeclareMathOperator{\Aut}{Aut} \DeclareMathOperator{\real}{Re} \DeclareMathOperator{\Frac}{Frac} \DeclareMathOperator{\Reg}{Reg} \DeclareMathOperator{\lcm}{lcm} \DeclareMathOperator{\Ext}{Ext} \DeclareMathOperator{\Tor}{Tor} \DeclareMathOperator{\Frob}{Frob} \DeclareMathOperator*{\clim}{ {\sf{lim} } } \DeclareMathOperator*{\colim}{ {\sf{colim} } } \DeclareMathOperator*{\holim}{ {\sf{holim} } } \DeclareMathOperator*{\hocolim}{ {\sf{hocolim} } } \DeclareMathOperator*{\const}{ {\sf{const} } } \DeclareMathOperator{\Spec}{Spec} \newcommand{\Sch}{ {\sf{Sch} } } \newcommand{\Shv}{ {\sf{Shv} } } \newcommand{\Et}{ {\sf{Et} } } \newcommand{\I}[1]{\mathcal{I}(#1)} \newcommand{\V}[1]{\mathcal{V}(#1)} \newcommand{\kn}{k[x_1,x_2,\ldots,x_n]} \newcommand{\Rn}{R[x_1,x_2,\ldots,x_n]} \newcommand{\Af}{ {\Bbb A}^n} \newcommand{\Ak}{ {\Bbb A}_k^n} \newcommand{\Akn}[1]{ {\Bbb A}_k^#1} \newcommand{\ARn}[1]{ {\Bbb A}_{\Bbb R}^#1} \newcommand{\An}[1]{ {\Bbb A}^#1} \newcommand{\fr}[1]{\mathfrak #1} \newcommand{\specz}{\Spec\Z} \newcommand{\cz}{\C[z]} \newcommand{\zx}{\Z[x]} \newcommand{\sff}{\mathcal F} \newcommand{\res}[2]{\text{res}_#1^#2} \newcommand{\open}[1]{\text{Open}(#1)} \]
+                </span>
+            </p>
+        </div>
+    </div>
+    <div class="container bs-docs-container">
+        <div class=row>
+            <div class=col-md-9 role=main>
+                <div class="lead">
+                    $body$
+                </div>
+                <div class=bs-docs-section>
+                    <h1 class=page-header id=meta-header>Meta</h1>
+                    <p class=lead>In this post, which is the first one in my <a href="/schemes/">schemes sequence</a>, we look at why schemes matter, and then go on to define the sets underlying affine schemes, which are the “building blocks” that schemes are made out of. We then talk about sheaves, which are a powerful way to keep track of functions that are defined on parts of a geometric space and use “local knowledge” to prove global things and vice versa.</p>
+
+                    <h1 id=prerequisites-header>Prerequisites</h2>
+                        <p>
+                            In this post, I assume you know what a topology is. If you don’t, try reading this beforehand; it can’t hurt:
+                        </p>
+                        <h2 id=prerequisites-header-topology>Topologies</h2>
+                        <p>A topology on a set \(S\) is a collection of “open” sets \(U_i\) of the set \(S\), forming a subset \(T\subset P(S)\), where \(P(S)\) is the power set of the set \(S\), satisfying the following axioms:</p>
+
+                        <ul>
+                            <li>The empty subset and \(S\) itself are both open.</li>
+                            <li>The union of a possibly infinite collection of open sets is itself open.</li>
+                            <li>The intersection of a finite collection of open sets is itself open.</li>
+                        </ul>
+
+                        <p>A closed set is one whose complement is open. We can actually also define a topology using closed sets, in which case we have “dual” axioms:</p>
+
+                        <ul>
+                            <li>The empty subset and \(S\) itself are both closed.</li>
+                            <li>The intersection of a possibly infinite collection of closed sets is itself closed.</li>
+                            <li>The union of a finite collection of closed sets is itself closed.</li>
+                        </ul>
+
+                        <p>These definitions are completely equivalent.</p>
+                        <ul>
+                            <li>fill space</li>
+                            <li>fill space</li>
+                            <li>fill space</li>
+                            <li>fill space</li>
+                            <li>fill space</li>
+                            <li>fill space</li>
+                            <li>fill space</li>
+                            <li>fill space</li>
+                            <li>fill space</li>
+                            <li>fill space</li>
+                            <li>fill space</li>
+                            <li>fill space</li>
+                            <li>fill space</li>
+                            <li>fill space</li>
+                            <li>fill space</li>
+                        </ul>
+                </div>
+                <p>One good example to keep in mind is the classical/Euclidean<sup id="fnref:r2top"><a href="#fn:r2top" class="footnote">1</a></sup> topology on \(\Bbb R^2\), where open disks (like \(x^2 + y^2 &lt; 4\)) are open sets (definitely not the <em>only</em> ones!) and closed disks (e.g. \((x-2)^2 + y^2 \leq 5\)) are examples of closed sets. You can get all the other open sets from these by taking unions, intersections, and complements, as long as you follow the axioms above.</p>
+
+                <h1 id="some-philosophy">Some philosophy</h2>
+
+                    <p>The main objects of study in “modern” algebraic geometry are <em>schemes</em> – a certain kind of “geometric space” that encompasses both geometric questions (such as questions about lines on surfaces) and number-theoretic or arithmetic problems. This all works out because schemes are built from rings, so we can cast geometric problems in terms of rings of functions on geometric spaces – and algebraic number theory has been a thing for a very long time.</p>
+
+                    <p>This is a major idea behind algebraic geometry: sometimes it pays to look at some geometric thingy by considering the functions defined on that space. For instance, given a topological space \(T\), you can ask</p>
+
+                    <div class="bs-callout bs-callout-info">
+                        <p>“What continuous real-valued functions</p>
+
+                        <script type="math/tex; mode=display">f:T\to\R</script>
+
+                        <p>can I define on the space, satisfying <em>xyz</em> (where <em>xyz</em> is some property)?”</p>
+                    </div>
+
+                    <p>This question, by allowing you an indirect look at the space, often reveals very interesting information about the space.<sup id="fnref:proj"><a href="#fn:proj" class="footnote">2</a></sup> You can do similar things for smooth or complex manifolds.</p>
+
+                    <p>This “indirect viewpoint” is the primary one adopted in algebraic geometry.</p>
+
+                    <div class="bs-callout bs-callout-info">
+                        <h4>Slogan</h4>
+                        <p>Instead of looking at a space, look at the (rings) of functions defined on its subsets.</p>
+                    </div>
+
+                    <p>Here is some motivation for what schemes are like, using some words we haven’t defined here yet. You may have heard of differentiable or smooth manifolds: they are spaces that locally “look like” \(\R^n\). For instance, a sphere looks like \(\R^2\) if you “zoom in” enough. And we understand \(\R^2\) just fine, and \(\R^n\) in general – this is just multivariable calculus. The idea here is that we can work with complicated spaces as long as, “locally”, they look like things we understand.</p>
+
+                    <div class="bs-callout bs-callout-warning">
+                        <h4>(Cop-out) definition</h4>
+                        <p>A scheme is defined as a “locally ringed space” (which we haven’t defined yet) that is locally isomorphic to an <em>affine scheme</em>.</p>
+                    </div>
+
+                    <p>That was a lot of words we haven’t defined, but it seems like understanding what affine schemes are might be the first step toward grokking schemes.</p>
+
+                    <h1 id="affine-schemes-the-underlying-set">Affine schemes: the underlying set</h2>
+
+                        <div class="bs-callout bs-callout-info">
+                            <p>This section assumes you know some ring theory, at least enough to know what ideals are. See <a href="/ideals-and-prime-ideals/">this post</a> for all the background you’ll need.</p>
+                        </div>
+
+                        <p>Consider a ring \(R\), and think about its prime ideals. You can mentally set \(R = \Z\) or \(\C[x]\) if you wish.</p>
+
+                        <div class="bs-callout bs-callout-info">
+                            <p>
+                                <h4>Definition</h4> The prime ideals of \(R\) form a set called \(\Spec R\).</p>
+                        </div>
+
+                        <p>We will try to think of the prime ideals as “points” of a “space” \(\Spec R\). Following notation in, say, Eisenbud-Harris<sup id="fnref:geom-schemes"><a href="#fn:geom-schemes" class="footnote">3</a></sup>, we will write \([\pp]\) when we are thinking of a prime ideal as a point, although we will soon outgrow the need for this. Now, the elements of \(R\) are functions on this space!</p>
+
+                        <p>“Wait, what?”</p>
+
+                        <p>Yes. Let \(f\in R\) (look at how our notation is evolving!) be a “regular function” on \(\Spec R\). The “value” of the regular function \(f\) at \(x = [\pp]\) is defined as the image of \(f\) in \(R/\pp\)<sup id="fnref:frac"><a href="#fn:frac" class="footnote">4</a></sup>.</p>
+
+                        <p>Two examples, and all will be clear.</p>
+
+                        <ul>
+                            <li>Consider \(7\in\Z\). What is its value at the point \([(2)]\) of \(\specz\)? It’s \(7\Mod 2\), or, equivalently, the equivalence class \([7]\in \Z/2\Z\)<sup id="fnref:reddit-fix-2"><a href="#fn:reddit-fix-2" class="footnote">5</a></sup>.</li>
+                            <li>(Vakil.<sup id="fnref:vakil-1"><a href="#fn:vakil-1" class="footnote">6</a></sup>) The value of the function</li>
+                        </ul>
+
+                        <script type="math/tex; mode=display">x^2-5x+7</script>
+
+                        <p>at \([(x-4)]\in\cz\) is just \(4^2-5\cdot4+7\). Alternatively, it is the function \(f(x)=\) “\(x^2 - 5x+7\) evaluated modulo \((x-4)\)”, which are both the same thing because of the division algorithm.</p>
+
+                        <h1 id="put-some-functions-on-it-the-structure-sheafput-a-ring-on-it">Put some functions on it: the structure sheaf<sup id="fnref:put-a-ring-on-it"><a href="#fn:put-a-ring-on-it" class="footnote">7</a></sup></h2>
+
+                            <p>Okay, now we have some geometry. Let’s look at some functions on these affine schemes. The motivating idea is this: you can’t have any functions defined all over \(\Spec R\) with anything in the denominator, because they would fail to be defined at the points in the denominator. This is just like how the function</p>
+
+                            <script type="math/tex; mode=display">f(z) = \frac{z^2-z+1}{z-3}</script>
+
+                            <p>has domain \(\Bbb C\setminus\{3\}\)<sup id="fnref:reddit-fix-2:1"><a href="#fn:reddit-fix-2" class="footnote">5</a></sup>.</p>
+
+                            <h2 id="a-first-step-motivating-presheaves">A first step: motivating presheaves</h2>
+
+                            <p>It is then that you might have the clever idea of saying, “Why not consider these partially-defined functions systematically?” Of course, <em>systematically</em> isn’t very specific, but thinking about what our functions should be like gradually gives us some natural properties we can demand.</p>
+
+                            <p>Vaguely, we want to attach some data to every open set \(U\) of our topological space, where the “data” can be a ring of functions, or a vector space (say of functions defined on \(U\) satisfying some differential equation), or a group, or something similar. There are, of course, many different ways to pick “rules” saying what to attach to every open set.</p>
+
+                            <p>Given such a rule \(\sff\), for every open set \(U\) in our space, we want some algebraic object \(\sff(U)\). We call these the <em>sections</em> of \(\sff\) <em>over \(U\)</em>.</p>
+
+                            <p>If you need an example to hold on to, think of the “rule” that eats an open set \(U\subset \R^2\), say, and spits out the set (actually a ring) of differentiable functions</p>
+
+                            <script type="math/tex; mode=display">C^1(U) := \{f:U\to\R:f \text{ differentiable everywhere on } U\}</script>
+
+                            <p>What properties, intuitively, would you want these assigments of … things to open sets to satisfy? Well, I’ll now do the thing where I magically wave my hands and exhibit a list. I think, however, that they will appear well-motivated. Any rule \(\sff\) satisfying these properties is what is called a <em>presheaf</em>:</p>
+
+                            <ul>
+                                <li>You should be able to restrict functions from a bigger open set to a smaller one. This corresponds to a map</li>
+                            </ul>
+
+                            <script type="math/tex; mode=display">\res U V: \sff(U)\to\sff(V)</script>
+
+                            <p>if \(V\subset U\) is an open subset. This is a map in the appropriate category – i.e. a ring homomorphism if the \(\sff(U)\)’s are rings, a group homomorphism if they are groups, a linear map if we’re doing vector spaces, and so on.</p>
+
+                            <ul>
+                                <li>This restriction should be “sane”:</li>
+                                <li>The “identity” restrictions, that is, \(\res U U\), should be the identity maps. That is,</li>
+                            </ul>
+
+                            <script type="math/tex; mode=display">\text{for all }U\subset X, \res U U =\id_U.</script>
+
+                            <p>This is … just … it could not be otherwise.<sup id="fnref:reaction"><a href="#fn:reaction" class="footnote">8</a></sup></p>
+
+                            <ul>
+                                <li>If we have subsets \(W\hookrightarrow V\hookrightarrow U\), then the two evident ways to restrict a function on \(U\) to \(W\) – restrict to \(V\) and then to \(W\), or to \(W\) at once – should be the same thing, i.e.</li>
+                            </ul>
+
+                            <script type="math/tex; mode=display">\res V W\circ\res U V = \res U W.</script>
+
+                            <p>If you’ve nodded your head at each of these conditions, congratulations, you both know and intuitively understand how to define a presheaf!</p>
+
+                            <p>If \(\sff(U)\) is a ring, we say that \(\sff\) is a <em>presheaf of rings</em>. It shouldn’t be too hard to understand what sheaves of sets, groups, rings, and so on are.</p>
+
+                            <h3 id="interlude-a-more-abstract-perspective-on-presheaves">Interlude: A more abstract perspective on presheaves</h3>
+                            <p><em>(This requires a tiny bit of category theory. I will probably write that up sometime soon.)</em></p>
+
+                            <p>Consider the category of open sets of \(X = \Spec R\). This is the category \(\open X\) whose objects are the open sets of \(R\), and where the only morphisms are the inclusions of smaller open sets into bigger ones. That is, for every inclusion \(U\subset V\), we have a morphism</p>
+
+                            <script type="math/tex; mode=display">U\to V</script>
+
+                            <p>in the category \(\open X\).</p>
+
+                            <h4>Alternative definition</h4>
+                            <p>
+                                For \(\CC\) some category (say the category of rings, \(\Ring\)), a <em>\(\CC\)-valued presheaf</em> is a functor</p>
+
+                            <script type="math/tex; mode=display">\sff: \opp{\open X}\to\CC,</script>
+
+                            <p>that is, a contravariant functor from \(\open X\) to \(\CC\).</p>
+
+                            <p>For instance, a \(\Ring\)-valued presheaf is just what we have called a presheaf of rings above. This definition is exactly equivalent to the one we made previously, since:</p>
+
+                            <ul>
+                                <li>the condition that a functor take identity morphisms to identities means that the identity morphisms in \(\open X\) (inclusions of the form \(U\hookrightarrow U\) in \(\open X\)) are sent to identity morphisms \(\res U U = \id_U\) in \(\CC\).</li>
+                                <li>the condition that restrictions from a big open set to a medium and finally to a small open set make sense however it is done corresponds to the fact that functors respect composition of morphisms. To every diagram of the form</li>
+                            </ul>
+
+                            <script type="math/tex; mode=display">W\overset j\hookrightarrow V\overset i\hookrightarrow U</script>
+
+                            <p>in \(\open X\), the presheaf \(\sff\) associates a diagram</p>
+
+                            <script type="math/tex; mode=display">\sff(U) \overset{\res U V}\hookrightarrow \sff(V) \overset{\res V W}\hookrightarrow W</script>
+
+                            <p>in \(\CC\), which commutes. (TODO: these should be commutative triangles!)</p>
+
+                            <p>There is a way to extend this to the definition of a sheaf, and more<sup id="fnref:sites"><a href="#fn:sites" class="footnote">9</a></sup>.</p>
+
+                            <h4 id="sheaves">Sheaves</h4>
+
+                            <p>A sheaf is a special kind of presheaf. Before we get into exactly what a sheaf is, here’s the</p>
+
+                            <div class="bs-callout bs-callout-info">
+                                <h4>Big Idea™</h4>
+
+                                <p>Presheaves of rings or groups are complicated things to work with. What if we could just work with rings or the groups?</p>
+                            </div>
+
+                            <p>This does not work for presheaves, in general. This is because (<em>philosophy/buzzword alert</em>) presheaves do not capture “local” data. We need some extra conditions on our presheaf to make our lives easier, and that is exactly what the notion of a sheaf captures.</p>
+
+                            <div class="bs-callout bs-callout-info">
+                                <h4>Aside</h4>
+
+                                <p>For instance – although we haven’t defined it yet, it shouldn’t be too hard to believe that there is a notion of a map of sheaves – there are examples of maps of (pre)sheaves that are surjective on the sections, but not surjective themselves.</p>
+                            </div>
+
+                            <p>Working with sheaves instead of presheaves fixes this, in some sense, because the sheaf axiom that we will state next allows us to capture more data. For instance, there is a notion of the <em>stalk</em> of a presheaf at a point, but it only really behaves well for sheaves. The stalk of a sheaf \(\sff\) of rings at a point \(p\) is a ring \(\sff_p\), and so on – and there are many properties that are true for a sheaf iff they are true for the stalks, so we can prove things “stalk-by-stalk”<sup id="fnref:surj-stalk"><a href="#fn:surj-stalk" class="footnote">10</a></sup>.</p>
+
+                            <div class="bs-callout bs-callout-info">
+                                <h4>Definition</h4>
+                                <p>
+                                    A sheaf is a presheaf where, given compatible sections \(f_i\in\sff(U_i)\) over all open sets \(U_i\) in an open cover<sup id="fnref:open-cover"><a href="#fn:open-cover" class="footnote">11</a></sup> of \(U\), there exists a unique section \(f\in\sff(U)\) such that</p>
+
+                                <script type="math/tex; mode=display">f|_{U_i} = f_i</script>
+
+                                <p>for all \(U_i\). Here “compatible” means “agreeing on overlaps”, i.e. writing \(U_ {ij}\) for \(U_ i \cap U_ j\),</p>
+
+                                <script type="math/tex; mode=display">{f_ i}|_ {U_ {ij}} = {f_ j}|_ {U_ {ij}}.</script>
+                            </div>
+
+                            <p>This allows us to “patch” sections together. This is a key property: as we will notice in future, sheaves may be harder to define, but they are much easier to work with and prove things about.</p>
+
+                            <p>We end with a super-elementary example of how “sheafy thinking” works.</p>
+
+                            <div class="bs-callout bs-callout-info">
+                                <h4>Proposition</h4> If there is a <em>global section</em> \(f\) of \(\sff\) (i.e. \(f\in\sff(X)\) where \(X\) is the whole space) which is \(0\) when restricted to every open subset in an open cover<sup id="fnref:open-cover:1"><a href="#fn:open-cover" class="footnote">11</a></sup> of \(X\), it is zero everywhere.</p>
+                            </div>
+
+                            <p>Notice how “obvious” this sounds! This is in fact true, but not for general presheaves.</p>
+
+                            <div class="bs-callout bs-callout-info">
+                                <h4>Proof</h4>
+
+                                <ul>
+                                    <li>The everywhere-zero section \(z\in\sff(X)\) (I could’ve used \(0\), but overloading is unhelpful at times) is zero on every open subset of \(X\).</li>
+                                    <li>The \(f|_ {U_ i}\) are compatible sections (since \(0 = 0\)), so they patch together to give some global section. By the uniqueness condition in the sheaf axiom, this global section must be equal to \(z\).</li>
+                                    <li>Hence \(z = f\) as elements of \(\sff(X)\).</li>
+                                </ul>
+                            </div>
+
+                            <p>In reality, there are a bunch of equivalent ways to think about the sheaf axiom, and they all sort of merge into one idea before long. Here are some:</p>
+
+                            <ul>
+                                <li>Two sections over \(U\) that agree on every \(U_ i\) in an open cover of \(U\) are in fact the same.</li>
+                                <li>The proposition from above is equivalent to the previous condition, since the uniqueness of the zero section can be used to show that \(f-g\) being globally zero makes \(f = g\).</li>
+                            </ul>
+
+                            <p>In the next instalment, we will construct a topological space out of our set \(\Spec R\), and construct a sheaf, the <em>structure sheaf</em>, making \(\Spec R\) into a ringed space.</p>
+
+                            <p>There’s a <a href="https://www.reddit.com/r/math/comments/5id5ve/so_what_are_schemes_first_part_up_more_coming_soon/">Reddit thread</a> if you want to discuss anything!</p>
+
+                            <h2 id="bibliography">Bibliography</h2>
+
+                            <ul>
+                                <li>Ravi Vakil, Foundations of Algebraic Geometry <sup id="fnref:vakil"><a href="#fn:vakil" class="footnote">12</a></sup></li>
+                                <li>Eisenbud, Harris, The Geometry of Schemes<sup id="fnref:geom-schemes:1"><a href="#fn:geom-schemes" class="footnote">3</a></sup></li>
+                            </ul>
+            </div>
+            <div class=col-md-3 role=complementary>
+                <nav class="bs-docs-sidebar hidden-print hidden-sm hidden-xs">
+                    <ul class="nav bs-docs-sidenav">
+                        <li> <a href=#meta-header>Meta</a></li>
+                        <li>
+                            <a href=#prerequisites-header>Prerequisites</a>
+                            <ul class="nav">
+                                <li><a href=#prerequisites-header-topology>Topologies</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#affine-schemes-the-underlying-set">Affine schemes: the underlying set</a>
+                        </li>
+                        <li>
+                            <a href="#put-some-functions-on-it-the-structure-sheafput-a-ring-on-it">The structure sheaf</a>
+                            <ul class="nav">
+                                <li>
+                                    <a href="#a-first-step-motivating-presheaves">Motivating presheaves</a>
+                                </li>
+                                <li>
+                                    <a href="#interlude-a-more-abstract-perspective-on-presheaves">Interlude: a more abstract perspective</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li> <a href=#bibliography>Bibliography</a></li>
+                    </ul> <a href=#top class=back-to-top> Back to top </a> </nav>
+            </div>
+        </div>
+    </div>
+    <footer class=bs-docs-footer>
+        <div class=container>
+            <ul class=bs-docs-footer-links>
+                <li><a href=https://github.com/twbs/bootstrap>About</a></li>
+                <li>&middot;</li>
+                <li><a href=https://twitter.com/getbootstrap>Twitter</a></li>
+                <li><a href=http://getbootstrap.com/getting-started/#examples>Examples</a></li>
+                </li>
+            </ul>
+            <p>Made with Spacemacs!</p>
+        </div>
+    </footer>
+    <script src=https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js></script>
+    <script>
+        window.jQuery || document.write('<script src="http://getbootstrap.com/assets/js/vendor/jquery.min.js"><\/script>')
+    </script>
+    <script src=http://getbootstrap.com/dist/js/bootstrap.min.js></script>
+    <script src=http://getbootstrap.com/assets/js/docs.min.js></script>
+    <script src=http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js></script>
+    <script>
+        var _gauges = _gauges || [];
+        ! function() {
+            var e = document.createElement("script");
+            e.async = !0, e.id = "gauges-tracker", e.setAttribute("data-site-id", "4f0dc9fef5a1f55508000013"), e.src = "//secure.gaug.es/track.js";
+            var t = document.getElementsByTagName("script")[0];
+            t.parentNode.insertBefore(e, t)
+        }()
+    </script>

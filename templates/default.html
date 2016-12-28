@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang=en>
+
+    <head>
+        <meta charset=utf-8>
+        <meta content="IE=edge" http-equiv=X-UA-Compatible>
+        <meta content="width=device-width,initial-scale=1" name=viewport>
+        <meta content="Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development." name=description>
+        <meta content="Mark Otto, Jacob Thornton, and Bootstrap contributors" name=author>
+        <title>$title$</title>
+        <link href=http://getbootstrap.com/dist/css/bootstrap.min.css rel=stylesheet>
+        <link href=/css/docs.css rel=stylesheet>
+        <!--[if lt IE 9]><script src=http://getbootstrap.com/assets/js/ie8-responsive-file-warning.js></script><![endif]-->
+        <script src=http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js></script>
+        <!--[if lt IE 9]> <script src=https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js></script> <script src=https://oss.maxcdn.com/respond/1.4.2/respond.min.js></script> <![endif]-->
+        <link href=/apple-touch-icon.png rel=apple-touch-icon>
+        <link href=/favicon.ico rel=icon>
+        <script>
+         ! function(e, t, a, n, c, o, s) {
+             e.GoogleAnalyticsObject = c, e[c] = e[c] || function() {
+                 (e[c].q = e[c].q || []).push(arguments)
+             }, e[c].l = 1 * new Date, o = t.createElement(a), s = t.getElementsByTagName(a)[0], o.async = 1, o.src = n, s.parentNode.insertBefore(o, s)
+         }(window, document, "script", "//www.google-analytics.com/analytics.js", "ga"), ga("create", "UA-146052-10", "getbootstrap.com"), ga("send", "pageview")
+        </script>
+
+        <!-- MathJax -->
+        <script type="text/x-mathjax-config">
+         MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "AMS" } }, tex2jax: { inlineMath: [ ['\\\(','\\\)'] ], displayMath: [ ['\\\[','\\\]'] ], processEscapes: true, } });
+        </script>
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG">
+        </script>
+
+    </head>
+
+    <body>
+        <a href=#content class="sr-only sr-only-focusable" id=skippy>
+            <div class=container><span class=skiplink-text>Skip to main content</span></div>
+        </a>
+
+        <!-- <a href=https://v4-alpha.getbootstrap.com/ class=v4-tease>Aww yeah, Bootstrap 4 is coming!</a> -->
+        <header class="bs-docs-nav navbar navbar-static-top" id=top>
+            <div class=container>
+                <div class=navbar-header> <button aria-controls=bs-navbar aria-expanded=false class="collapsed navbar-toggle" data-target=#bs-navbar data-toggle=collapse type=button> <span class=sr-only>Toggle navigation</span> <span class=icon-bar></span> <span class=icon-bar></span> <span class=icon-bar></span> </button>
+                    <a href=/home class=navbar-brand>The Good, The Bad, and The Ramified</a>
+                </div>
+                <nav class="collapse navbar-collapse" id=bs-navbar>
+                    <!-- <ul class="nav navbar-nav navbar-right"> -->
+                    <!-- <li class=active><a href="/about" onclick='ga("send","event","Navbar","Community links","Themes")'>About</a></li> -->
+                    <!-- <li><a href="/archive" onclick='ga("send","event","Navbar","Community links","Expo")'>Contact</a></li> -->
+                    <!-- </ul> -->
+                </nav>
+            </div>
+        </header>
+        <div class="bs-docs-header col-md-12" id=content tabindex=-1>
+            <div class=container>
+                <h1>$if(header)$ $header$ $else$ $title$ $endif$</h1>
+                $if(date)$
+                <p>
+                    $date$
+                </p>
+                $endif$ $if(subtitle)$
+                <p>
+                    $subtitle$
+                </p>
+                $endif$
+                $if(tags)$
+                <i>
+                    <p class="small">
+                        tagged $tags$
+                    </p>
+                </i>
+                $endif$
+                <span class="hidden">
+                    <!-- LaTeX definitions I use -->
+                    $partial("templates/minified-latex-macros.html")$
+                </span>
+            </div>
+        </div>
+        <div class="container bs-docs-container">
+            <div class=row>
+                <div class=col-md-9 role=main>
+                    <div class="lead">
+                        $if(lead)$ $lead$ $endif$
+                    </div>
+                    $body$
+                </div>
+                <div class=col-md-3 role=complementary>
+                    <nav class="bs-docs-sidebar hidden-print hidden-sm hidden-xs">
+                        <!-- <ul class="nav bs-docs-sidenav"> -->
+                        <!-- </ul> <a href=#top class=back-to-top> Back to top </a> </nav> -->
+                </div>
+            </div>
+        </div>
+        <footer class=bs-docs-footer>
+            <div class=container>
+                <ul class=bs-docs-footer-links>
+                    <li>licensed <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></li>
+                    <li class="hidden-md hidden-sm hidden-xs">&middot;</li>
+                    <li><a href="https://github.com/mrkgnao/mrkgnao.github.io">source on GitHub</a></li>
+                </ul>
+            </div>
+        </footer>
+        <script src=https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js></script>
+        <script>
+         window.jQuery || document.write('<script src="http://getbootstrap.com/assets/js/vendor/jquery.min.js"><\/script>')
+        </script>
+        <script src=http://getbootstrap.com/dist/js/bootstrap.min.js></script>
+        <script src=http://getbootstrap.com/assets/js/docs.min.js></script>
+        <script src=http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js></script>
+        <script>
+         var _gauges = _gauges || [];
+         ! function() {
+             var e = document.createElement("script");
+             e.async = !0, e.id = "gauges-tracker", e.setAttribute("data-site-id", "4f0dc9fef5a1f55508000013"), e.src = "//secure.gaug.es/track.js";
+             var t = document.getElementsByTagName("script")[0];
+             t.parentNode.insertBefore(e, t)
+         }()
+        </script>

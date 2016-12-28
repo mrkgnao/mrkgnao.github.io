@@ -1,0 +1,26 @@
+name:                blogtest
+version:             0.1.0.0
+synopsis:            Hakyll project template from stack
+description:         Please see README.md
+homepage:            https://github.com/mrkgnao/blogtest#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Soham Chowdhury
+maintainer:          chow.soham@gmail.com
+copyright:           Soham Chowdhury, 2016
+category:            none
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+executable blogtest
+  main-is:             site.hs
+  default-language:    Haskell2010
+  ghc-options:         -threaded
+  build-depends:       base == 4.9.0.0
+                     , hakyll == 4.9.2.0
+                     , unordered-containers == 0.2.7.2
+                     , regex-compat == 0.95.1
+                     , filepath == 1.4.1.0
+                     , text == 1.2.2.1
+                     , aeson == 1.0.2.1
