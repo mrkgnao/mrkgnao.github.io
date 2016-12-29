@@ -1,0 +1,18 @@
+.page-header {
+    padding-bottom: 0.45rem;
+    margin: 2rem 0 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+body {
+    position: relative;
+}
+
+ul.affix {
+    position: fixed;
+    top: 20px;
+}
+
+ul.affix-top {
+    position: block;
+}

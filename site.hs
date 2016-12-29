@@ -15,13 +15,18 @@ import           Text.Regex
 --------------------------------------------------------------------------------
 main :: IO ()
 main = hakyll $ do
+
     match "images/*" $ do
         route   idRoute
         compile copyFileCompiler
 
-    match "css/*" $ do
+    match "css/**" $ do
         route   idRoute
-        compile compressCssCompiler
+        compile $ do getResourceBody
+
+    match "js/**" $ do
+        route   idRoute
+        compile $ do getResourceBody
 
     match (fromList ["about.rst", "contact.markdown"]) $ do
         route   $ setExtension "html"
