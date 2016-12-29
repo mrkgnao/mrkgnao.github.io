@@ -4036,6 +4036,7 @@ tbody.collapse.in {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   margin-right: 1rem;
+  white-space: nowrap;
   font-size: 1.25rem;
   line-height: inherit;
 }
