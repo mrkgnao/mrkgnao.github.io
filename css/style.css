@@ -1,0 +1,604 @@
+
+html
+{
+  line-height : 1.14999em;
+  font-family : "Iosevka", monospace;
+  font-size   : 16px;
+  color       : #000000;
+}
+
+main
+{
+  font-size      : 16px;
+  line-height    : 1.5em;
+  margin-top     : 2em;
+  padding-bottom : 2em;
+  max-width      : 900px;
+}
+
+
+main ol li
+{
+  padding-top    : 0.29999em;
+  padding-bottom : 0.29999em;
+}
+
+main hr
+{
+  margin : 3em auto 3em auto;
+  width  : 2em;
+}
+
+main em
+{
+  padding-right : 2px;
+}
+
+main h2
+{
+  margin-top    : 2em;
+  margin-bottom : 0.5em;
+}
+
+main .post-link__date
+{
+  font-size : 14px;
+}
+
+main .post-link__title
+{
+  margin-top : 1em;
+}
+
+@media all and (min-width: 1201px)
+{
+main
+{
+  padding-left  : 35%;
+  padding-right : 10%;
+}
+
+}
+@media all and (min-width: 801px) and (max-width: 1200px)
+{
+main
+{
+  padding-left  : 20%;
+  padding-right : 10%;
+}
+
+}
+@media all and (max-width: 800px)
+{
+main
+{
+  padding-left  : 4%;
+  padding-right : 4%;
+}
+
+}
+
+header p
+{
+  font-family : "Iosevka", monospace;
+  font-size   : 16px;
+  width       : 80%;
+  max-width   : 500px;
+  line-height : 1.39999em;
+  margin      : 1em 7px 1em 7px;
+}
+
+header h3,
+header h4
+{
+  font-size : 18px;
+  margin    : 1.1rem 0em 1.1rem 0em;
+  padding   : 0rem 0em 0rem 0em;
+}
+
+header h4
+{
+  font-family : "Iosevka", monospace;
+}
+
+header h4 a[href]
+{
+  color            : #cc0066;
+  background-color : #ffffff;
+  border           : solid 2px #cc0066;
+}
+
+header h4 a[href]:link
+{
+  color : #cc0066;
+}
+
+header h4 a[href]:visited
+{
+  color : #cc0066;
+}
+
+header h4 a[href]:focus
+{
+  color : #cc0066;
+}
+
+header h4 a[href]:hover
+{
+  color            : #ffffff;
+  background-color : #cc0066;
+  border           : solid 2px #ffffff;
+}
+
+header h3
+{
+  font-family : "Iosevka", monospace;
+}
+
+header h3 a[href]
+{
+  color            : #ffffff;
+  background-color : #cc0066;
+  border           : solid 2px #ffffff;
+}
+
+header h3 a[href]:link
+{
+  color : #ffffff;
+}
+
+header h3 a[href]:visited
+{
+  color : #ffffff;
+}
+
+header h3 a[href]:focus
+{
+  color : #ffffff;
+}
+
+header h3 a[href]:hover
+{
+  color            : #cc0066;
+  background-color : #ffffff;
+  border           : solid 2px #cc0066;
+}
+
+header h3
+{
+  font-size : 24px;
+}
+
+@media all and (min-width: 1201px)
+{
+header
+{
+  float : left;
+  width : 35%;
+}
+
+}
+@media all and (min-width: 801px) and (max-width: 1200px)
+{
+
+header h3
+{
+  font-size : 32px;
+}
+
+
+header h3 a[href]
+{
+  padding : 4px 30px 4px 30px;
+  margin  : 0px -25px 0px -25px;
+}
+
+
+header h4 a[href]
+{
+  padding : 4px 30px 4px 30px;
+  margin  : 0px -25px 0px -25px;
+}
+
+}
+@media all and (min-width: 1201px)
+{
+
+header h3
+{
+  font-size : 32px;
+}
+
+
+header h3 a[href]
+{
+  padding : 4px 30px 4px 30px;
+  margin  : 0px -25px 0px -25px;
+}
+
+
+header h4 a[href]
+{
+  padding : 4px 30px 4px 30px;
+  margin  : 0px -25px 0px -25px;
+}
+
+}
+@media all and (max-width: 800px)
+{
+
+
+header h3 a[href]
+{
+  padding : 4px 4px 4px 4px;
+}
+
+
+header h4 a[href]
+{
+  margin : 4px 4px 4px 4px;
+}
+
+header nav
+{
+  margin     : 1em auto 1em auto;
+  text-align : right;
+}
+
+header nav h4
+{
+  display : inline;
+  margin  : 1em 3px 1em 3px;
+}
+
+header nav h4 a[href]
+{
+  padding : 5px 5px 5px 5px;
+}
+
+}
+footer
+{
+  font-family    : "Iosevka", monospace;
+  font-size      : 18px;
+  padding-top    : 2em;
+  padding-bottom : 2em;
+}
+
+footer.page-footer
+{
+  font-size : 12px;
+}
+
+@media all and (min-width: 1201px)
+{
+footer.page-footer
+{
+  margin-left : 35%;
+}
+
+}
+@media all and (min-width: 801px) and (max-width: 1200px)
+{
+footer.page-footer
+{
+  margin-left : 20%;
+}
+
+}
+@media all and (max-width: 800px)
+{
+footer.page-footer
+{
+  margin-left : 4%;
+}
+
+}
+pre,
+code
+{
+  font-family : "Iosevka", monospace;
+}
+
+@media all and (max-width: 800px)
+{
+pre,
+code
+{
+  overflow-x : scroll;
+}
+
+}
+code:not(.sourceCode)
+{
+  background-color : #dfdada;
+  padding          : 0px 0.29999em 0px 0.29999em;
+}
+
+.code-eval
+{
+  background-color : #eaeaef;
+  padding          : 1em 1em 1em 1em;
+}
+
+.code-error
+{
+  background-color : #ffcccc;
+  padding          : 1em 1em 1em 1em;
+}
+
+
+.sourceCode span.kw
+{
+  color       : #007020;
+  font-weight : bold;
+}
+
+.sourceCode span.dt
+{
+  color : #902000;
+}
+
+.sourceCode span.co
+{
+  color : #60a0b0;
+}
+
+.sourceCode span.ot
+{
+  color : #007020;
+}
+
+.sourceCode span.al
+{
+  color       : #ff0000;
+  font-weight : bold;
+}
+
+.sourceCode span.fu
+{
+  color : #06287e;
+}
+
+
+.sourceCode span.dv
+{
+  color : #40a070;
+}
+
+.sourceCode span.bn
+{
+  color : #40a070;
+}
+
+.sourceCode span.fl
+{
+  color : #40a070;
+}
+
+.sourceCode span.ch
+{
+  color : #4070a0;
+}
+
+.sourceCode span.st
+{
+  color : #4070a0;
+}
+
+.sourceCode span.er
+{
+  color       : #ff0000;
+  font-weight : bold;
+}
+
+h1,
+h2,
+h3,
+h4
+{
+  font-family : "Iosevka", monospace;
+  font-weight : bold;
+  line-height : 1.19999em;
+  margin-top  : 1.5em;
+}
+
+.index__header
+{
+  margin-top     : 2rem;
+  padding-bottom : 0.5em;
+}
+
+h1
+{
+  font-size : 28px;
+}
+
+h2
+{
+  font-size : 24px;
+}
+
+h3
+{
+  font-size : 20px;
+}
+
+h4
+{
+  font-size : 18px;
+}
+
+ol
+{
+  list-style-type : decimal;
+}
+
+sup
+{
+  vertical-align : super;
+  font-size      : 80%;
+}
+
+ul
+{
+  padding-left : 20px;
+}
+
+a[href]
+{
+  text-decoration : none;
+  outline-style   : none;
+  padding         : 2px 2px 2px 2px;
+  margin          : 0px -2px 0px -2px;
+}
+
+a[href]:link
+{
+  color : #cc0066;
+}
+
+a[href]:visited
+{
+  color : #cc0066;
+}
+
+a[href]:focus
+{
+  color : #cc0066;
+}
+
+a[href]:hover
+{
+  color            : #99004d;
+  background-color : #ffcce0;
+}
+
+.post-header__title
+{
+  margin-top    : 0em;
+  border-bottom : solid 2px #000000;
+}
+
+.post-header__author
+{
+  margin-top     : 4px;
+  margin-bottom  : 1.5em;
+  padding-bottom : 4px;
+  text-align     : right;
+}
+
+.post-header__date
+{
+  font-size     : 14px;
+  margin-bottom : 0.5em;
+}
+
+pre
+{
+  margin-top    : 2em;
+  margin-bottom : 2em;
+  padding-left  : 1em;
+  padding-right : 1em;
+}
+
+ul,
+ol
+{
+  padding-left : 2em;
+}
+
+p
+{
+  margin-top    : 0.5em;
+  margin-bottom : 0.5em;
+}
+
+blockquote
+{
+  margin-top    : 1em;
+  margin-bottom : 1em;
+}
+
+@media all and (min-width: 1201px)
+{
+blockquote
+{
+  padding-left : 20%;
+}
+
+}
+@media all and (max-width: 800px)
+{
+blockquote
+{
+  font-size   : 16px;
+  line-height : 1.3em;
+}
+
+}
+
+@media all and (max-width: 800px)
+{
+div.figure
+{
+  margin-left  : -12.2%;
+  margin-right : -11%;
+}
+
+}
+@media all and (min-width: 801px) and (max-width: 1200px)
+{
+div.figure
+{
+  margin-left  : -13%;
+  margin-right : -11%;
+}
+
+}
+@media all and (min-width: 1201px)
+{
+div.figure
+{
+  margin-left  : -33%;
+  margin-right : -29%;
+}
+
+}
+img.display-math
+{
+  display   : block;
+  margin    : 1rem auto !important;
+  max-width : 100%;
+  height    : auto;
+}
+
+@media all and (min-width: 801px) and (max-width: 1200px)
+{
+
+.post-header__title
+{
+  font-size : 32px;
+}
+
+}
+@media all and (min-width: 1201px)
+{
+
+.post-header__title
+{
+  font-size : 32px;
+}
+
+}
+@media all and (max-width: 800px)
+{
+
+.post-header__title
+{
+  font-size : 28px;
+}
+
+}
+
+/* Generated with Clay, http://fvisser.nl/clay */
